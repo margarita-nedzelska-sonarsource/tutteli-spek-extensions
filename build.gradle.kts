@@ -95,10 +95,9 @@ detekt {
 
 sonarqube {
     properties {
+        property ("sonar.organization", "margarita-nedzelska")
         property("sonar.host.url", "https://sonarcloud.io")
-        property("sonar.organization", "robstoll-github")
-        property("sonar.projectKey", "robstoll_${rootProject.name}")
-        property("sonar.projectVersion", rootProject.version)
+        property("sonar.projectKey", "margarita-nedzelska-sonarsource_tutteli-spek-extensions")
         property("sonar.kotlin", "detekt.reportPaths=build/reports/detekt/detekt.xml")
         property("sonar.sources", "src/main/kotlin")
         property("sonar.tests", "src/test/kotlin")
